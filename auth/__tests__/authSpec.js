@@ -22,7 +22,7 @@ describe('auth-router.js', () => {
 
     // Should return 201 for registered user
     it('should register a user with username/password', async () => {
-        const res = await request(server).post('/api/auth/register').send({"username": "nathansl2000", "password": "passwords"})
+        const res = await request(server).post('/api/auth/register').send({"username": "nathansl2000", "password": "password"})
             expect(res.status).toBe(201);
     })
 
